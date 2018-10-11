@@ -1,20 +1,44 @@
 import React from 'react'
 import Navbar from "./Navbar.js"
-import Home from "./Home.js"
-import Projects from "./Projects"
+import Particles from 'react-particles-js';
+
+// import Home from "./Home.js"
+// import Projects from "./Projects"
+
 
 class Main extends React.Component {
   render(){
-    return(<div>
+    return(<main>
             <Navbar />
             {/* <Home /> */}
-            {/* <Main /> */}
             {/* <Projects /> */}
             {/* <Resume /> */}
             {/* <Contact />  */}
             {/* <SocialLinks /> */}
             {/* <Footer /> */}
-          </div>
+            <Particles
+                params={{
+                  "particles": {
+                      "number": {
+                          "value": 160,
+                          "density": {
+                              "enable": false
+                          }
+                      },
+                      "size": {
+                          "value": 10,
+                          "random": true
+                      },
+                      "move": {
+                          "direction": "top",
+                          "out_mode": "out"
+                      },
+                      "line_linked": {
+                          "enable": false
+                      }
+                  }
+              }} />
+          </main>
     )
   }
 }

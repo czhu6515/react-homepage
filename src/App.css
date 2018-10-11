@@ -14,12 +14,18 @@ FONTS
 font-family: 'Contrail One', cursive;
 font-family: 'Work Sans', sans-serif;
 */
+body { 
+  margin:0px;
+  overflow: hidden;
+  background: rgb(255,255,255);
+  background: radial-gradient(ellipse at center,  rgba(179, 183, 212, 0.863) 0%,rgba(1,209,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#abd1ea',GradientType=1 );
+  font-family: 'Roboto', sans-serif;
 
-body {
-  font-family: 'Work Sans', sans-serif;
 }
+
 h1 {
-  font-family: 'Contrail One', cursive;
+  font-family: 'Roboto', cursive;
 }
 p {
   text-align: justify;
@@ -37,7 +43,10 @@ a.to-top, a.to-top:visited {
 NAVIGATION
 ******************************************************/
 nav {
-  background-color: #1B2355;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(6, 17, 46);
+  height: 4em;
 }
 
 nav h1, nav a, nav a:visited {
@@ -63,6 +72,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  text-align: center;
+  height: 3.5em;
   width: 19vw;
   font-size: 1rem;
   margin: 5px auto;
