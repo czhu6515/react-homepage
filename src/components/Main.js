@@ -10,7 +10,7 @@ import $ from "jquery"
 class Main extends React.Component {
   render(){
     return(<main>
-            <Navbar />
+            {/* <Navbar /> */}
             <ParticleLayer />
             {/* <Home /> */}
             {/* <Projects /> */}

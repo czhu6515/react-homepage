@@ -19,10 +19,10 @@ class Navbar extends React.Component {
             </ul>
           </nav>
 
-        <Route exact path='/' component={Home}/>
+        {/* <Route exact path='/' component={Home}/>
         <Route exact path='/Projects' component={Projects}/>
         <Route exact path='/Resume' component={Resume}/>
-        <Route exact path='/Contacts' component={Contacts}/>
+        <Route exact path='/Contacts' component={Contacts}/> */}
 
         </div>
       </Router>
