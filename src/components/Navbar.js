@@ -10,7 +10,7 @@ class Navbar extends React.Component {
     return(
       <Router>
         <div>
-          <nav> 
+          <nav className='nav-bar'> 
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/Projects">Projects</Link></li>
