@@ -1,47 +1,24 @@
 /******************************************************
 GENERAL
 ******************************************************/
-/*COLORS
-Primary Dark = #1B2355
-Pimary Light = #A0CCE3
-Secondary Dark = #F66464
-Secondary Light = #E79294
-Tertiary Dark = #8A859B
-Tertiary Mid = #BAC0BA
-Tertiary Light = #E8ECEF
-
-FONTS
-font-family: 'Contrail One', cursive;
-font-family: 'Work Sans', sans-serif;
-*/
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: #f4f7fc ;
+  color: #fff;
   text-decoration: none;
 }
 
-
-body { 
+body {
   margin: 0px;
   overflow: hidden;
-  background: radial-gradient(ellipse at center,  rgba(179, 183, 212, 0.863) 0%,rgba(1,209,234,1) 100%);
-  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(179, 183, 212, 0.863) 15%,
+    rgba(1, 209, 234, 1) 100%
+  );
+  font-family: "Roboto", sans-serif;
 }
-
-
-/* 
-#root {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.site-content {
-  flex: 1;
-} */
-
 
 /******************************************************
 NAVIGATION
@@ -52,7 +29,7 @@ nav {
   position: absolute;
 }
 
-nav ul{
+nav ul {
   /* opacity: 0.5; */
   height: 100vh;
   margin: 0;
@@ -66,19 +43,28 @@ nav ul li {
   list-style: none;
 }
 
-
 /******************************************************
-HOME
+Introduction
 ******************************************************/
-#home{
-  top: 50px;
-  display: absolute;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0);
-  /* height: 100vh;
-  width: 100vw; */
+#intro {
+  position: relative;
+  top: -45em;
+  text-align: center;
 }
 
+#intro-headline {
+  padding: 50px 0;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  overflow: hidden;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+}
 
 /******************************************************
 MAIN (#about-me)
@@ -88,19 +74,19 @@ MAIN (#about-me)
 PROJECTS
 ******************************************************/
 
-
 /******************************************************
 RESUME
 ******************************************************/
 
-
 /******************************************************/
-                 /*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
 /******************************************************
 NAVIGATION
 ******************************************************/
-@media only screen and (min-width: 769px) {
-  
+@media only screen and (max-width: 769px) {
+  #introduction {
+    top: -35em;
+  }
 }
 
 /******************************************************
