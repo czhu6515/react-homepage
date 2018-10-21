@@ -8,7 +8,7 @@ class ParticleLayer extends Component {
   render() {
     return(
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
       <Particles height='100vh' width='100vw'
         params={{
           "interactivity": {

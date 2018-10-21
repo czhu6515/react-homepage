@@ -5,7 +5,7 @@ import React from 'react'
 class Projects extends React.Component {
   render() {
     return(
-      <div>
+      <div id='projects'>
         <h1>Projects</h1>
   
       </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "./Navbar.js"
 import ParticleLayer from './ParticleLayer'
 import $ from "jquery"
+import Home from './Home.js'
 
 // import Home from "./Home.js"
 // import Projects from "./Projects"
@@ -10,9 +11,9 @@ import $ from "jquery"
 class Main extends React.Component {
   render(){
     return(<main>
-            {/* <Navbar /> */}
+            <Navbar />
             <ParticleLayer />
-            {/* <Home /> */}
+            <Home />
             {/* <Projects /> */}
             {/* <Resume /> */}
             {/* <Contact />  */}
