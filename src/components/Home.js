@@ -2,7 +2,7 @@ import React from "react";
 import anime from "animejs";
 import $ from "jquery";
 
-class Introduction extends React.Component {
+class Home extends React.Component {
   componentDidMount() {
     $("#intro-headline").each(function() {
       $(this).html(
@@ -27,7 +27,7 @@ class Introduction extends React.Component {
     return (
       <div id="intro">
         <div id="intro-headline">
-          <h1 class="ml16">Hello my name is Chen</h1>
+          <h1 className="ml16">Hello my name is Chen</h1>
         </div>
         <h4>...and I'm a full-stack web developer</h4>
       </div>
@@ -35,4 +35,4 @@ class Introduction extends React.Component {
   }
 }
 
-export default Introduction;
+export default Home;

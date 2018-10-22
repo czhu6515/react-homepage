@@ -1,31 +1,40 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 
 class Navbar extends React.Component {
+  renderHome = () => {
+    this.props.renderHome();
+  };
+
+  renderProjects = () => {
+    this.props.renderProjects();
+  };
+
+  renderContacts = () => {
+    this.props.renderContacts();
+  };
+
   render() {
     return (
-      <Router>
-        <div>
-          <nav className="nav-bar">
-            <ul>
-              <li>
-                <Link to="/Projects">Projects</Link>
-              </li>
-              <li>
-                <Link to="/Resume">Resume</Link>
-              </li>
-              <li>
-                <Link to="/Contacts">Contacts</Link>
-              </li>
-            </ul>
-          </nav>
-
-          {/* <Route exact path="/" component={Home} /> */}
-          {/* <Route exact path='/Projects' component={Projects}/>
-        <Route exact path='/Resume' component={Resume}/>
-        <Route exact path='/Contacts' component={Contacts}/> */}
-        </div>
-      </Router>
+      <nav className="nav-bar">
+        <ul>
+          <li>
+            <Button variant="outlined" onClick={this.renderHome}>
+              Home
+            </Button>
+          </li>
+          <li>
+            <Button variant="outlined" onClick={this.renderProjects}>
+              Projects
+            </Button>
+          </li>
+          <li>
+            <Button variant="outlined" onClick={this.renderContacts}>
+              Contacts
+            </Button>
+          </li>
+        </ul>
+      </nav>
     );
   }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
-import Introduction from "./Introduction";
 // courtesy of Vincent Garreau
 
 class ParticleLayer extends Component {

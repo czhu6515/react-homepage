@@ -3,7 +3,6 @@ GENERAL
 ******************************************************/
 
 * {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
@@ -24,18 +23,14 @@ body {
 NAVIGATION
 ******************************************************/
 nav {
-  width: 100vw;
-  top: 0;
-  position: absolute;
+  top: -35em;
+  position: relative;
 }
 
 nav ul {
   /* opacity: 0.5; */
-  height: 100vh;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -50,14 +45,16 @@ Introduction
   position: relative;
   top: -45em;
   text-align: center;
+  padding: 0.5em;
 }
 
 #intro-headline {
+  font-family: "Josefin Sans", sans-serif;
   padding: 50px 0;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2em;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   overflow: hidden;
 }
 
@@ -83,9 +80,9 @@ RESUME
 /******************************************************
 NAVIGATION
 ******************************************************/
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 800px) {
   #introduction {
-    top: -35em;
+    top: -30em;
   }
 }
 
