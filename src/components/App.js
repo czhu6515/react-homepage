@@ -34,8 +34,8 @@ class App extends Component {
         <ParticleLayer />
         <div id="showcase">
           {this.state.home && <Home />}
+          {this.state.contacts && <Contacts />}
           {this.state.projects && <Projects />}
-          {this.state.projects && <Contacts />}
         </div>
         <Navbar
           renderHome={this.renderHome}
