@@ -8,17 +8,17 @@ class Home extends React.Component {
       $(this).html(
         $(this)
           .text()
-          .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+          .replace(/([A-Za-z]|\w)/g, "<span class='letter'>$&</span>")
       );
     });
 
     anime.timeline().add({
       targets: "#intro-headline .letter",
-      translateY: [-100, 0],
+      translateY: [-300, 0],
       easing: "easeOutExpo",
-      duration: 2700,
+      duration: 3000,
       delay: function(el, i) {
-        return 30 * i;
+        return 75 * i;
       }
     });
   }
@@ -29,7 +29,7 @@ class Home extends React.Component {
         <div id="intro-headline">
           <h1 className="ml16">Hello my name is Chen</h1>
         </div>
-        <h4>...and I'm a full-stack web developer</h4>
+        <h4>...and this is my fully responsive React portfolio</h4>
       </div>
     );
   }

@@ -69,7 +69,8 @@ PROJECTS
 ******************************************************/
 #gallery {
   position: relative;
-  top: -45em;
+  text-align: center;
+  top: -35em;
   height: 400px;
 }
 
@@ -77,10 +78,31 @@ PROJECTS
 Contacts
 ******************************************************/
 #contacts {
+  text-align: center;
   position: relative;
-  top: -45em;
+  top: -35em;
   height: 400px;
 }
+
+#social-media{
+  font-family: "Josefin Sans", sans-serif;
+  padding: 50px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+}
+
+i.fab {
+  padding: 20px; 
+}
+
+i.fab:hover {
+  color: rgba(216, 18, 157, 0.863);
+  transition: 700ms;
+}
+  
 /******************************************************/
 /*MEDIA QUERIES*/
 /******************************************************

@@ -2,34 +2,23 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 
 class Navbar extends React.Component {
-  renderHome = () => {
-    this.props.renderHome();
-  };
-
-  renderProjects = () => {
-    this.props.renderProjects();
-  };
-
-  renderContacts = () => {
-    this.props.renderContacts();
-  };
 
   render() {
     return (
       <nav className="nav-bar">
         <ul>
           <li>
-            <Button variant="outlined" onClick={this.renderHome}>
+            <Button variant="outlined" onClick={this.props.renderHome}>
               Home
             </Button>
           </li>
           <li>
-            <Button variant="outlined" onClick={this.renderProjects}>
+            <Button variant="outlined" onClick={this.props.renderProjects}>
               Projects
             </Button>
           </li>
           <li>
-            <Button variant="outlined" onClick={this.renderContacts}>
+            <Button variant="outlined" onClick={this.props.renderContacts}>
               Contacts
             </Button>
           </li>

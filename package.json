@@ -8,6 +8,7 @@
     "jquery": "^3.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-image-gallery": "^0.8.12",
     "react-particles-js": "^2.3.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.17"
