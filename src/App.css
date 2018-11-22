@@ -22,20 +22,65 @@ body {
 /******************************************************
 NAVIGATION
 ******************************************************/
-nav {
-  top: -35em;
+nav.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -86em;
+  height: 10em;
+  background-color: rgba(1, 209, 234, 1) 100%;
   position: relative;
 }
 
 nav ul {
   /* opacity: 0.5; */
-  padding: 0;
   display: flex;
-  justify-content: space-around;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 nav ul li {
   list-style: none;
+  background: rgba(1, 209, 234, 0.01) 100%;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  line-height: 55px;
+  opacity: 0.8;
+}
+
+nav ul li:hover {
+  background: rgba(1, 209, 234, 0.01) 100%;
+  color: rgba(233, 49, 178, 0.863);
+}
+nav ul li:before,
+nav ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgba(233, 49, 178, 0.863) 100%;
+  transition: 400ms ease all;
+}
+nav ul li:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+nav ul li:hover:before,
+nav ul li:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 /******************************************************
@@ -43,9 +88,9 @@ Home
 ******************************************************/
 #intro {
   position: relative;
-  top: -35em;
+  top: -39em;
   text-align: center;
-  padding: 0.6em;
+  padding: 10px;
   height: 400px;
 }
 
@@ -70,7 +115,7 @@ PROJECTS
 #gallery {
   position: relative;
   text-align: center;
-  top: -35em;
+  top: -39em;
   height: 400px;
 }
 
@@ -80,11 +125,11 @@ Contacts
 #contacts {
   text-align: center;
   position: relative;
-  top: -35em;
+  top: -39em;
   height: 400px;
 }
 
-#social-media{
+#social-media {
   font-family: "Josefin Sans", sans-serif;
   padding: 50px 0;
   font-weight: 800;
@@ -95,14 +140,14 @@ Contacts
 }
 
 i.fab {
-  padding: 20px; 
+  padding: 20px;
 }
 
 i.fab:hover {
   color: rgba(216, 18, 157, 0.863);
   transition: 700ms;
 }
-  
+
 /******************************************************/
 /*MEDIA QUERIES*/
 /******************************************************
