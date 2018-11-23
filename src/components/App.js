@@ -15,17 +15,14 @@ class App extends Component {
 
   renderHome = () => {
     this.setState({ home: true, projects: false, contacts: false });
-    console.log("home", this.state);
   };
 
   renderProjects = () => {
     this.setState({ home: false, projects: true, contacts: false });
-    console.log("projects", this.state);
   };
 
   renderContacts = () => {
     this.setState({ home: false, projects: false, contacts: true });
-    console.log("projects", this.state);
   };
 
   render() {

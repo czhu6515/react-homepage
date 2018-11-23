@@ -8,7 +8,23 @@ class Home extends React.Component {
       $(this).html(
         $(this)
           .text()
-          .replace(/([A-Za-z]|\w)/g, "<span class='letter'>$&</span>")
+          .replace(/([A-Za-z!-~]|\w)/g, "<span class='letter'>$&</span>")
+      );
+    });
+
+    $("#intro-line-one").each(function() {
+      $(this).html(
+        $(this)
+          .text()
+          .replace(/([A-Za-z!-~]|\w)/g, "<span class='letter'>$&</span>")
+      );
+    });
+
+    $("#intro-line-two").each(function() {
+      $(this).html(
+        $(this)
+          .text()
+          .replace(/([A-Za-z!-~]|\w)/g, "<span class='letter'>$&</span>")
       );
     });
 
@@ -21,15 +37,50 @@ class Home extends React.Component {
         return 75 * i;
       }
     });
+
+    setTimeout(() => {
+      anime.timeline().add({
+        targets: "#intro-line-one .letter",
+        translateY: ["7em", 0],
+        translateX: ["7em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 2000,
+        easing: "easeOutExpo",
+        delay: function(el, i) {
+          return 75 * i;
+        }
+      });
+    }, 3000);
+
+    setTimeout(() => {
+      anime.timeline().add({
+        targets: "#intro-line-two .letter",
+        translateY: ["7em", 0],
+        translateX: ["7em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 2000,
+        easing: "easeOutExpo",
+        delay: function(el, i) {
+          return 75 * i;
+        }
+      });
+    }, 7000);
   }
 
   render() {
     return (
       <div id="intro">
         <div id="intro-headline">
-          <h1 className="ml16">Hello my name is Chen</h1>
+          <h1>Hello, my name is Chen!</h1>
         </div>
-        <h4>...and this is my fully responsive React portfolio</h4>
+
+        <h4 id="intro-line-one">I'm a Freelance Full-Stack Web developer</h4>
+
+        <h4 id="intro-line-two">
+          ...and I want to build something cool with you!
+        </h4>
       </div>
     );
   }

@@ -23,13 +23,14 @@ body {
 NAVIGATION
 ******************************************************/
 nav.nav-bar {
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  top: -86em;
+  position: fixed;
+  top: 0;
   height: 10em;
   background-color: rgba(1, 209, 234, 1) 100%;
-  position: relative;
 }
 
 nav ul {
@@ -87,11 +88,13 @@ nav ul li:hover:after {
 Home
 ******************************************************/
 #intro {
-  position: relative;
-  top: -39em;
+  position: fixed;
+  top: 10em;
   text-align: center;
   padding: 10px;
   height: 400px;
+  width: 100vw;
+  height: 100vh;
 }
 
 #intro-headline {
@@ -113,10 +116,11 @@ Home
 PROJECTS
 ******************************************************/
 #gallery {
-  position: relative;
   text-align: center;
-  top: -39em;
-  height: 400px;
+  position: fixed;
+  top: 12em;
+  height: 100vh;
+  width: 100vw;
 }
 
 /******************************************************
@@ -124,9 +128,10 @@ Contacts
 ******************************************************/
 #contacts {
   text-align: center;
-  position: relative;
-  top: -39em;
-  height: 400px;
+  position: fixed;
+  top: 12em;
+  height: 100vh;
+  width: 100vw;
 }
 
 #social-media {
