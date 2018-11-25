@@ -1,39 +1,38 @@
 import React, { Component } from "react";
 import "../App.css";
-import Home from "./Home";
-import Projects from "./Projects";
-import Contacts from "./Contacts";
+import Showcase from "./Showcase";
 import ParticleLayer from "./ParticleLayer";
 import Navbar from "./Navbar";
 
 class App extends Component {
   state = {
-    home: true,
-    projects: false,
-    contacts: false
+    step: 1
   };
 
   renderHome = () => {
-    this.setState({ home: true, projects: false, contacts: false });
+    this.setState({ step: 1 });
   };
 
   renderProjects = () => {
-    this.setState({ home: false, projects: true, contacts: false });
+    this.setState({ step: 2 });
   };
 
   renderContacts = () => {
-    this.setState({ home: false, projects: false, contacts: true });
+    this.setState({ step: 3 });
   };
 
   render() {
     return (
       <div id="app">
         <ParticleLayer />
-        <div id="showcase">
-          {this.state.home && <Home />}
-          {this.state.contacts && <Contacts />}
-          {this.state.projects && <Projects />}
-        </div>
+        <Showcase
+          id="showcase"
+          step={this.state.step}
+          renderHome={this.renderHome}
+          renderProjects={this.renderProjects}
+          renderContacts={this.renderContacts}
+        />
+
         <Navbar
           renderHome={this.renderHome}
           renderProjects={this.renderProjects}

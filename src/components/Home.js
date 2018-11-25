@@ -41,26 +41,26 @@ class Home extends React.Component {
     setTimeout(() => {
       anime.timeline().add({
         targets: "#intro-line-one .letter",
-        translateY: ["7em", 0],
-        translateX: ["7em", 0],
+        translateY: ["700em", 0],
+        translateX: ["700em", 0],
         translateZ: 0,
         rotateZ: [180, 0],
-        duration: 2000,
+        duration: 1500,
         easing: "easeOutExpo",
         delay: function(el, i) {
           return 75 * i;
         }
       });
-    }, 3000);
+    }, 2700);
 
     setTimeout(() => {
       anime.timeline().add({
         targets: "#intro-line-two .letter",
-        translateY: ["7em", 0],
-        translateX: ["7em", 0],
+        translateY: ["700em", 0],
+        translateX: ["700em", 0],
         translateZ: 0,
         rotateZ: [180, 0],
-        duration: 2000,
+        duration: 1500,
         easing: "easeOutExpo",
         delay: function(el, i) {
           return 75 * i;

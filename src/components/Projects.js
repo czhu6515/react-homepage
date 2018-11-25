@@ -1,8 +1,16 @@
 import React, { Component } from "react";
-import ImageGallery from 'react-image-gallery'
 
 class Projects extends Component {
-  
+  state = { project: 1 };
+
+  nextProject = () => {
+    this.setState({ project: this.state.project + 1 });
+  };
+
+  prevProject = () => {
+    this.setState({ project: this.state.project - 1 });
+  };
+
   render() {
     return (
       <div id="gallery">
