@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Project from "./Project";
 
 class Projects extends Component {
   state = { project: 1 };
@@ -14,7 +15,7 @@ class Projects extends Component {
   render() {
     return (
       <div id="gallery">
-        <h1>awesome</h1>
+        <Project />
       </div>
     );
   }
