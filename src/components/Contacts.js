@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Contacts extends Component {
   render() {
     return (
-      <div id="contacts">
+      <div id="contacts" class="animated fadeIn">
         <h1 id="social-media">Contacts</h1>
         <h1>
           <a

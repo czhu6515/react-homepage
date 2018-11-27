@@ -14,8 +14,8 @@ class Projects extends Component {
 
   render() {
     return (
-      <div id="gallery">
-        <Project />
+      <div id="gallery" class="animated fadeIn">
+        <Project project={this.state.project}/>
       </div>
     );
   }
