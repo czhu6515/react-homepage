@@ -27,6 +27,13 @@ class Contacts extends Component {
           >
             <i className="fab fa-github-square fa-2x" />
           </a>
+          <a
+            href="mailto:someone@example.com?Subject=Let's%20Build%20Something%20Cool%20Together!"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i class="fas fa-envelope-square fa-2x" />
+          </a>
         </h1>
       </div>
     );

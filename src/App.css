@@ -134,11 +134,18 @@ PROJECTS
   justify-content: center;
 }
 
+#project-main-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 #project-wrapper{
   width: 250px;
   height: 65px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 #project-carousel{
@@ -147,7 +154,8 @@ PROJECTS
   justify-content: space-between;
   width: 400px;
   top: 14.5em;
-  z-index: -2;
+  z-index: 0;
+  align-items: center;
 }
 
 #project-links-wrapper{
