@@ -54,6 +54,7 @@ nav ul li {
   outline: none;
   line-height: 55px;
   opacity: 0.8;
+  right: 0.5em;
 }
 
 nav ul li:hover {
@@ -134,13 +135,13 @@ PROJECTS
   justify-content: center;
 }
 
-#project-main-wrapper{
+#project-main-wrapper {
   display: flex;
   justify-content: center;
   width: 100vw;
 }
 
-#project-wrapper{
+#project-wrapper {
   width: 250px;
   height: 65px;
   display: flex;
@@ -148,7 +149,7 @@ PROJECTS
   z-index: 1;
 }
 
-#project-carousel{
+#project-carousel {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -158,7 +159,7 @@ PROJECTS
   align-items: center;
 }
 
-#project-links-wrapper{
+#project-links-wrapper {
   position: fixed;
   top: 230px;
   z-index: 100;
@@ -173,18 +174,18 @@ PROJECTS
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
+  filter: drop-shadow(6px 6px 4px #4444dd);
 }
 
-#project-wrapper:hover > #project-img{
+#project-wrapper:hover > #project-img {
   opacity: 0.5;
   transition: 0.5s;
 }
 
-#project-wrapper:hover > #project-links-wrapper{
+#project-wrapper:hover > #project-links-wrapper {
   display: block;
   transition: 0.5s;
 }
-
 
 /******************************************************
 Contacts
@@ -233,8 +234,13 @@ i.fas:hover {
 NAVIGATION
 ******************************************************/
 @media only screen and (max-width: 800px) {
-  #introduction {
-    top: -30em;
+  nav ul li {
+    padding: 0;
+    margin: 0.5em;
+  }
+
+  #project-carousel {
+    width: 355px;
   }
 }
 
