@@ -71,7 +71,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div id="intro" class="animated fadeIn">
+      <div id="intro" className="animated fadeIn">
         <div id="intro-headline">
           <h1>Hello, my name is Chen!</h1>
         </div>

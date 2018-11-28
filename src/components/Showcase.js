@@ -23,7 +23,14 @@ class Showcase extends Component {
         );
 
       case 2:
-        return <Projects key="projects" />;
+        return (
+          <Projects
+            key="projects"
+            project={this.props.project}
+            prevProject={this.props.prevProject}
+            nextProject={this.props.nextProject}
+          />
+        );
       case 3:
         return <Contacts key="contacts" />;
     }
