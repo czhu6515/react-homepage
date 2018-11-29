@@ -217,7 +217,7 @@ PROJECTS
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
-  filter: drop-shadow(6px 6px 4px #4444dd);
+  filter: drop-shadow(6px 6px 4px #002fff8e);
 }
 
 #project-wrapper:hover > #project-img {
