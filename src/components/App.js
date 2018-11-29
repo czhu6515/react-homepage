@@ -7,13 +7,14 @@ import Navbar from "./Navbar";
 class App extends Component {
   state = {
     step: 1,
-    project: 1
+    project: 1,
+    numOfProjects: 5
   };
 
   nextProject = () => {
-    this.state.project < 3
+    this.state.project < this.state.numOfProjects
       ? this.setState({ project: this.state.project + 1 })
-      : this.setState({ project: 3 });
+      : this.setState({ project: this.state.numOfProjects });
   };
 
   prevProject = () => {
@@ -42,6 +43,7 @@ class App extends Component {
           id="showcase"
           step={this.state.step}
           project={this.state.project}
+          numOfProjects={this.state.numOfProjects}
           renderHome={this.renderHome}
           renderProjects={this.renderProjects}
           renderContacts={this.renderContacts}

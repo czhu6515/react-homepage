@@ -32,7 +32,7 @@ class Contacts extends Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i class="fas fa-envelope-square fa-2x" />
+            <i className="fas fa-envelope-square fa-2x" />
           </a>
         </h1>
       </div>

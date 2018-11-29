@@ -27,6 +27,7 @@ class Showcase extends Component {
           <Projects
             key="projects"
             project={this.props.project}
+            numOfProjects={this.props.numOfProjects}
             prevProject={this.props.prevProject}
             nextProject={this.props.nextProject}
           />

@@ -23,6 +23,8 @@ class Project extends Component {
             <i className="fa-3x fab fa-github" />
           </a>
         </div>
+        <h2 id="project-title">{this.props.title}</h2>
+        <p id="project-description">{this.props.description}</p>
       </div>
     );
   }
